@@ -9,7 +9,7 @@ OBJ = boot.o
 all: $(PROJ).elf
 
 %.o: %.S
-	arm-none-eabi-as -mcpu=$(CPU) -mthumb $< -o $@
+	arm-none-eabi-as -mthumb -mcpu=$(CPU) -g -c $^ -o $@
 
 $(PROJ).elf: $(OBJ)
 	arm-none-eabi-ld -T map.ld $^ -o $@

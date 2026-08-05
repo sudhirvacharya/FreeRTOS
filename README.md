@@ -1,6 +1,8 @@
 # how to run
+    run
+       make  //after adding any changes
     new termial run
-    make qemu
+        make qemu
 
     another terminal
       make gdb and other gdb cmds

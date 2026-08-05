@@ -1,0 +1,17 @@
+.section .vector
+vector_table:
+    .word 0xABCD
+    .word reset_handler
+    .zero 400
+
+.section .text
+.align 1
+.type reset_handler, %function
+
+reset_handler:
+    mov r1, #1
+    mov r2, #2
+    add r3, r1, r2
+
+loop:
+    b loop

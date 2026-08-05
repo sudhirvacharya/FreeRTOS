@@ -1,3 +1,10 @@
+# how to run
+    new termial run
+    make qemu
+
+    another terminal
+      make gdb and other gdb cmds
+
 # FreeRTOS
 Companion Repo for the FreeRTOS Course
 

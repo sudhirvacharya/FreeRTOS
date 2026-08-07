@@ -2,7 +2,7 @@ PROJ = main
 CPU ?= cortex-m3
 BOARD ?= stm32vldiscovery
 
-OBJ = boot.o
+OBJ = boot.o start.o
 
 .PHONY: all clean
 
@@ -10,6 +10,9 @@ all: $(PROJ).elf
 
 %.o: %.S
 	arm-none-eabi-as -mthumb -mcpu=$(CPU) -g -c $^ -o $@
+
+%.o: %.c
+	arm-none-eabi-gcc -mthumb -mcpu=$(CPU) -g -c $^ -o $@
 
 $(PROJ).elf: $(OBJ)
 	arm-none-eabi-ld -T map.ld $^ -o $@

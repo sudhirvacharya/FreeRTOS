@@ -7,6 +7,16 @@
     another terminal
       make gdb and other gdb cmds
 
+    make clean
+
+    break <fucntion name>
+
+    ni -->next instruction
+    si //step in
+
+# how to kill QEMU (open in another shell not in gdb)
+  pkill -f qemu-system-arm
+
 # FreeRTOS
 Companion Repo for the FreeRTOS Course
 

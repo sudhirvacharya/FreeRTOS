@@ -11,10 +11,10 @@ vector_table:
     .word default
     .word default
     .word default
+    .word vPortSVCHandler
     .word default
     .word default
-    .word default
-    .word default
+    .word xPortPendSVHandler
     .word xPortSysTickHandler
     .zero 400
 

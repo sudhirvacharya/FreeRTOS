@@ -41,7 +41,7 @@ void start()
 
     xReturn = xTaskCreate(vTask1, "T1", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
     xReturn = xTaskCreate(vTask2, "T2", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
-
-    vTaskStartScheduler();
+    portENABLE_INTERRUPTS();
+    xPortStartScheduler();
     return;
 }

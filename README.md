@@ -62,7 +62,8 @@ pkill -f qemu-system-arm
 ## Git Workflow
 
 ```bash
-cd port
+pyjamabrah:/workspaces/FreeRTOS
+
 git add .
 git commit -m "<message>"
 git push

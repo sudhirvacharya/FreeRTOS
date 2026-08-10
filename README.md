@@ -1,4 +1,12 @@
 # how to run
+    cd port
+          make clean
+
+          make
+          make qemu
+    cd port
+          make gdb
+cmd used: n, s, continue, break<fucntion name>
     run
        make  //after adding any changes
     new termial run
